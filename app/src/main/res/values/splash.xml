@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.Stopwatch.CustomSplash" parent="Theme.SplashScreen.IconBackground">
+        <item name="windowSplashScreenBackground">#6E902B</item>
+        <item name="windowSplashScreenAnimatedIcon">@drawable/stopwatch</item>
+        <item name="windowSplashScreenIconBackgroundColor">#FFFFFF</item>
+        <item name="postSplashScreenTheme">@style/Theme.Stopwatch</item>
+    </style>
+</resources>
