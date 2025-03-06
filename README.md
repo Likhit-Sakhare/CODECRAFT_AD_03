@@ -1,6 +1,6 @@
 # **Stopwatch**
 
-This task by CODECRAFT INFOTECH is simple stopwatch where you can see hours, minutes, seconds and milliseconds with smooth animations and you can also reset it.
+This task by CODECRAFT INFOTECH is simple stopwatch where you can see hours, minutes, and seconds with smooth animations and you can also reset it.
 
 ---
 
@@ -8,7 +8,7 @@ This task by CODECRAFT INFOTECH is simple stopwatch where you can see hours, min
 
 #### **Animations and Time Tracking**
   - You can see a smooth UI animations where numbers slide in from the right and exit to the left, creating a seamless transition effect.
-  - The stopwatch displays hours, minutes, seconds, and milliseconds.
+  - The stopwatch displays hours, minutes, and seconds.
     
 #### **Intuitive controls**
   - The stopwatch has a Play/Pause button from which you can play or pause the stopwatch.
@@ -24,7 +24,7 @@ This task by CODECRAFT INFOTECH is simple stopwatch where you can see hours, min
 
 ## **Demo**
 
-<video src="https://github.com/user-attachments/assets/d1788cd2-072d-435a-9e7e-6977c315523b" controls="controls" style="max-width: 100%; height: auto;">
+<video src="https://github.com/user-attachments/assets/88fb3fa1-9a90-4e55-b67e-138e60144508" controls="controls" style="max-width: 100%; height: auto;">
     Demo how the app works.
 </video>
 
@@ -48,7 +48,17 @@ This task by CODECRAFT INFOTECH is simple stopwatch where you can see hours, min
 
 While building this app I learned:
 
-Coming Soon....
+1. **Foreground Services and Pending Intent**
+   - Learned what to define in the Android Manifest like permission, service name, service type, etc.
+   - Understood what are the key lifecycle methods like onBind(), onStartCommand(), onDestroy(), etc., and how to use them.
+   - Get to know how to create and use PendingIntent for communication between the service and notification.
+
+2. **Coroutines, Jobs and Service connection**
+   - Get to know what are coroutineScope() and Jobs, especially SupervisorJob() which is used for structured concurrency.
+   - Understood what ServiceConnection() is and how to use it to bind and communicate with the service.
+
+3. **Animations**
+   - Explored more animations and from that found and learn about AnimatedContent() and AnimatedContentTransitionScope<>() to create smooth UI transitions.
 
 ---
 
