@@ -48,7 +48,6 @@ fun StopwatchScreenRoot(
 ) {
     StopwatchScreen(
         modifier = modifier,
-        milliseconds = viewModel.milliseconds,
         seconds = viewModel.seconds,
         minutes = viewModel.minutes,
         hours = viewModel.hours,
@@ -62,7 +61,6 @@ fun StopwatchScreenRoot(
 @Composable
 fun StopwatchScreen(
     modifier: Modifier = Modifier,
-    milliseconds: String,
     seconds: String,
     minutes: String,
     hours: String,
@@ -125,14 +123,8 @@ fun StopwatchScreen(
                     color = NumbersColor
                 )
             }
-            Text(
-                text = milliseconds,
-                fontSize = 130.sp,
-                fontWeight = FontWeight.SemiBold,
-                color = NumbersColor
-            )
         }
-        Spacer(Modifier.height(12.dp))
+        Spacer(Modifier.height(16.dp))
         Row(
             modifier = Modifier.fillMaxWidth(),
             verticalAlignment = Alignment.CenterVertically,

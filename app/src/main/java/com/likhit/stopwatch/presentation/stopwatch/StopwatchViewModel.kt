@@ -28,8 +28,6 @@ class StopwatchViewModel @Inject constructor(
     private var stopwatchService: StopwatchService? = null
     private var isBound = false
 
-    var milliseconds by mutableStateOf("00")
-        private set
     var seconds by mutableStateOf("00")
         private set
     var minutes by mutableStateOf("00")
@@ -120,12 +118,10 @@ class StopwatchViewModel @Inject constructor(
         val hours = totalSeconds / 3600
         val minutes = (totalSeconds % 3600) / 60
         val seconds = totalSeconds % 60
-        val milliseconds = (totalMilliseconds % 1000) / 10
 
         this@StopwatchViewModel.hours = hours.toInt().pad()
         this@StopwatchViewModel.minutes = minutes.toInt().pad()
         this@StopwatchViewModel.seconds = seconds.toInt().pad()
-        this@StopwatchViewModel.milliseconds = milliseconds.toInt().pad()
     }
 
     private fun Int.pad(): String{

@@ -78,13 +78,15 @@ class StopwatchService: Service() {
 
         serviceScope.launch {
             while (_isRunning.value){
-                delay(1000L)
                 val now = SystemClock.elapsedRealtime()
                 val elapsed = now - lastTimestamp
                 lastTimestamp = now
 
+                if (!_isRunning.value) break
+
                 _time.value = _time.value.plus(java.time.Duration.ofMillis(elapsed).toKotlinDuration())
                 updateNotification()
+                delay(1000L)
             }
         }
     }
